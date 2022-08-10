@@ -3,4 +3,5 @@ RUN mkdir /app
 ADD . /app/ 
 WORKDIR /app 
 RUN go build app/server.go
-CMD ["/app/server"]
+EXPOSE 80
+ENTRYPOINT /app/server --port 80

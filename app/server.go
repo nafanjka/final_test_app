@@ -17,8 +17,8 @@ func appHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", appHandler)
 
-	log.Println("Started, serving on port 8888")
-	err := http.ListenAndServe(":8888", nil)
+	log.Println("Started, serving on port 80")
+	err := http.ListenAndServe(":80", nil)
 
 	if err != nil {
 		log.Fatal(err.Error())
