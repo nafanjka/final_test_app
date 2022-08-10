@@ -4,4 +4,4 @@ ADD . /app/
 WORKDIR /app 
 RUN go build app/server.go
 EXPOSE 80
-ENTRYPOINT /app/server --port 80
+ENTRYPOINT /app/server
